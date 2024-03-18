@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mundo de las Consolas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    color: #ade416;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #11e209;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto,
+.mapa {
+    flex-basis: 50%;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+marquee {
+    background-color: rgb(5, 5, 5);
+    color: rgb(60, 255, 1);
+    padding: 10px;
+    font-weight: bold;
+}
+</style>
+<body>
+   
+    
+    <header>
+        <h1>Bienvenido al Mundo de las Consolas de Videojuegos</h1>
+        <nav>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Videoconsola">Historia</a></li>
+                <li><a href="https://www.xataka.com/categoria/videojuegos">Noticias</a></li>
+                <li><a href="https://www.fib.upc.edu/retro-informatica/historia/videojocs.html" target="_blank">Enlace Externo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduccion">
+        <h2>Introducción al Mundo de las Consolas de Videojuegos</h2>
+        <p>
+            Las consolas de videojuegos son dispositivos electrónicos diseñados para jugar videojuegos en un televisor u otra pantalla. Han sido parte importante de la cultura popular desde la década de 1970, ofreciendo experiencias de juego únicas y entretenimiento para personas de todas las edades. Con el tiempo, han evolucionado desde sistemas simples hasta complejas plataformas de entretenimiento multimedia.</p>
+    </section>
+
+    <section id="historia">
+        <h2>Breve Historia de las Consolas</h2>
+        <p>Las consolas de videojuegos han evolucionado significativamente desde sus inicios en la década de 1970. Surgieron con juegos simples y gráficos básicos, pero han evolucionado hasta convertirse en poderosas plataformas de entretenimiento. Algunos hitos importantes en su historia incluyen el lanzamiento de la Atari 2600 en 1977, la introducción de Nintendo Entertainment System (NES) en 1985, el surgimiento de Sega Genesis y Super Nintendo en los años 90, la revolución del gaming en línea con PlayStation 2 y Xbox, y la constante evolución de la tecnología con PlayStation 4, Xbox One y Nintendo Switch. En resumen, las consolas han pasado de ser dispositivos simples a sofisticadas plataformas de juego que han transformado la industria del entretenimiento.</p>
+    </section>
+
+    <section id="noticias">
+        <h2>Últimas Noticias y Lanzamientos</h2>
+        <article>
+            <h3>¡Nuevo juego exclusivo para Nintendo Switch!</h3>
+            <p>Se acaba de anunciar un emocionante juego exclusivo para la Nintendo Switch que promete revolucionar el género...</p>
+            <img width="500px" src="POKEMON.jpg" alt="Nuevo juego para Nintendo Switch"> 
+        </article>
+        <article>
+            <h3>Lanzamiento de la PlayStation 5 Pro</h3>
+            <p>La PlayStation 5 (PS5) fue lanzada mundialmente el 12 y 19 de noviembre de 2020. Ofrece un rendimiento gráfico excepcional y tiempos de carga rápidos gracias a su potente hardware, incluyendo un procesador AMD Ryzen y una GPU personalizada. Su almacenamiento SSD proporciona una experiencia de juego fluida. La PS5 cuenta con un diseño futurista y elegante, además de tecnología de audio inmersivo. Es compatible con la mayoría de los juegos de PS4 y cuenta con una sólida alineación de títulos exclusivos y multiplataforma. Desde su lanzamiento, Sony ha seguido actualizando la consola para mejorar su funcionalidad y experiencia de usuario. En resumen, la PS5 representa un salto importante en la experiencia de juego, ofreciendo tecnología de próxima generación y una emocionante biblioteca de juegos.</p>
+            <video width="640" height="360" controls>
+                <source src="Y2meta.app-Lanzamiento PS5 – PLAY HAS NO LIMITS-(1080p).mp4" type="video/mp4">
+              
+            </video>
+        </article>
+    </section>
+    <a href="pagina2.hmtl.html">Ir a la página de Videojuegos</a><br>
+    <a href="Menu.html">Ir al menu</a><br>
+    <footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Puedes ponerte en contacto con nosotros en cualquier momento a través del siguiente formulario:</p>
+            <form action="enviar.php" method="post">
+        
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+                
+            </form>
+        </div>
+        <div class="mapa">
+            <h3>Encuéntranos en el Mapa</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.691177032014!2d-105.46452392387422!3d28.186306004203196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86eb15a3943fb00b%3A0xb350f8fb210f1675!2sGamer%20Point%20Delicias!5e0!3m2!1ses!2smx!4v1710476564890!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <marquee behavior="scroll" direction="left">¡No te pierdas nuestras últimas ofertas y promociones especiales!</marquee>
+
+</body>
+</html>
